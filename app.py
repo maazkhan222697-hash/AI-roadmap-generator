@@ -15,7 +15,7 @@ api_key = api_key or os.getenv("GROQ_API_KEY", "")
 
 with st.sidebar:
     st.header("Settings")
-    model = st.text_input("Groq model", value=os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile"))
+    model = st.text_input("Groq model", value=os.getenv("GROQ_MODEL", "llama-3.3-80b-versatile"))
     st.caption("Get an API key at https://console.groq.com/")
 
 if not api_key:
