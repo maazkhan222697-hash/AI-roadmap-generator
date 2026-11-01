@@ -15,7 +15,7 @@ api_key = api_key or os.getenv("GROQ_API_KEY", "")
 
 with st.sidebar:
     st.header("Settings")
-  model = st.text_input(
+model = st.text_input(
     "Groq model",
     value="openai/gpt-oss-120b"
 )
