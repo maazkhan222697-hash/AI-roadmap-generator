@@ -19,7 +19,7 @@ model = st.text_input(
     "Groq model",
     value="openai/gpt-oss-120b"
 )
-    st.caption("Get an API key at https://console.groq.com/")
+st.caption("Get an API key at https://console.groq.com/")
 
 if not api_key:
     st.warning("Add GROQ_API_KEY to Streamlit secrets or set it as an environment variable.")
